@@ -1,0 +1,1 @@
+# Lista 1 - Exercício 26
