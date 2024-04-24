@@ -1,0 +1,12 @@
+Na prova vai ter que explicar o funcionamento passo-a-passo do algoritmo de ordenação (com desenho)
+
+Não pode usar .sort() na prova e nem nos exercícios
+
+ordenado não significa, necessariamente, estar na ordem crescente
+
+[1, 2, 5, 8, 9] -> ordenado crescente
+[9, 8, 5, 2, 1] -> ordenado decrescente
+
+Bubble não é muito otimizado
+
+Busca exaustiva não é interessante
