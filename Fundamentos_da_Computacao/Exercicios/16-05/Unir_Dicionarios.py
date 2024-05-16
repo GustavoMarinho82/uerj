@@ -23,17 +23,29 @@ for x in range(tamanhoD2):
     dicionario2[chave] = valor
 
 
-#FOR's DE CONCATENAÇÃO DOS DICIONÁRIOS
-for chave in dicionario1.keys():   
-    if (chave in dicionario2.keys()):
-        dicionarios_unidos[chave] = (dicionario1[chave] + dicionario2[chave])
-    else:
-        dicionarios_unidos[chave] = dicionario1[chave]
+#CONCATENAÇÃO DOS DICIONÁRIOS
+chaves = list(dicionario1.keys()) + list(dicionario2.keys())
 
-for chave in dicionario2.keys():
-    if (chave not in dicionario1.keys()):
+for chave in chaves:   
+    if (chave in dicionario1.keys()) and (chave in dicionario2.keys()):
+        dicionarios_unidos[chave] = (dicionario1[chave] + dicionario2[chave])
+        
+    elif (chave in dicionario1.keys()):
+        dicionarios_unidos[chave] = dicionario1[chave]
+        
+    else:
         dicionarios_unidos[chave] = dicionario2[chave]
 
+# OUTRA FORMA DE FAZER A CONCATENAÇÃO
+#for chave in dicionario1.keys():   
+#    if (chave in dicionario2.keys()):
+#        dicionarios_unidos[chave] = (dicionario1[chave] + dicionario2[chave])
+#    else:
+#        dicionarios_unidos[chave] = dicionario1[chave]
+#
+#for chave in dicionario2.keys():
+#    if (chave not in dicionario1.keys()):
+#        dicionarios_unidos[chave] = dicionario2[chave]
 
 # PRINT's
 print(f"\nDicionário 01: {dicionario1}") 
