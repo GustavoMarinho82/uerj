@@ -25,9 +25,13 @@ def filtrar_dicionarios(d1, d2):
     filtro(d1, d_filtrado)
     filtro(d2, d_filtrado)
     
+    for chave in d1.keys():
+        if (chave in d2.keys()) and ((d1[chave] + d2[chave]) >= 2):
+            d_filtrado[chave] = d1[chave] + d2[chave]
+
     return d_filtrado
 
-  
+
 # PROGRAMA
 
 d1 = ler_dicionario("Dicionário 01")
