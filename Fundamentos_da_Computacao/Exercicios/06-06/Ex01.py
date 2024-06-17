@@ -1,4 +1,5 @@
-# Exercicio 01
+# Escreva uma função que recebe um vetor e um número inteiro e retorna um novo vetor, onde os números são rotacionados para a difeita N vezes. 
+# A rotação para a direita significa que cada elemento é deslocado uma posição para a direita, e o último elemento volta para a primeira opção.
 
 def rotacionar_direita(lista, vezes):
     nova_lista = [0, 0, 0, 0, 0]
