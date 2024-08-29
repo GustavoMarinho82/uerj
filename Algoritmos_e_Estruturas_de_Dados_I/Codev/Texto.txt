@@ -1,0 +1,9 @@
+Depois de instalar o Codev, você deve escolher um dos seguintes bancos de dados de exercícios para se conectar. Basta alterar o Settings.txt existente localizado na pasta Codev e alterar a configuração SERVER_URL para a base de exercícios desejada:
+
+Para configurar os dois bancos de dados, faça duas instalações do Codev, em diferentes diretórios.
+
+Exercícios de Fundamentos da Computação (em C/C++): para treinar programação básica
+SERVER_URL = https://raw.githubusercontent.com/fabiano-ol/codev_fundamentos/master
+
+Exercícios de AED1 (em C/C++): para treinar o conteúdo da disciplina Algoritmos e Estruturas de Dados 1
+SERVER_URL = https://raw.githubusercontent.com/fabiano-ol/codev/master
